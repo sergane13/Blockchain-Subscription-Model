@@ -4,6 +4,7 @@ import MetaMask from "../../components/metamaskConnection.js";
 import Image from "next/image";
 
 import meme from "../../public/ethMeme.jpg"
+import meme2 from "../../public/bitcoin-meme.png"
 
 export default function FreeTier()
 {
@@ -18,7 +19,7 @@ export default function FreeTier()
                         Free meme
                     </div>  
                     <div className="pt-4 px-2">
-                        Enjoy!
+                        Basic and boring memes =))
                     </div>
                     <Image
                         src={meme}
@@ -26,7 +27,14 @@ export default function FreeTier()
                         width="800px"
                         height="800px"
                         className="rounded-sm"
-                    /> 
+                    />
+                    <Image
+                        src={meme2}
+                        alt="eth meme incoming..."
+                        width="800px"
+                        height="800px"
+                        className="rounded-sm"
+                    />  
                 </div>
             </div>
 

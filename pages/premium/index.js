@@ -18,8 +18,15 @@ export default function StandardTier()
                         Premium meme
                     </div>  
                     <div className="pt-4 px-2">
-                        A gold one ...
+                        Top 2 gold memes ever ... =))
                     </div>
+                    <Image
+                        src={meme}
+                        alt="elon boy incoming..."
+                        width="800px"
+                        height="800px"
+                        className="rounded-lg"
+                    /> 
                     <Image
                         src={meme}
                         alt="elon boy incoming..."
