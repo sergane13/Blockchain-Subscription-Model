@@ -1,4 +1,13 @@
+import { getContract } from "../scripts/contractsDetails";
+
 export default function AccessCard({type, free, standard, premium, children}){
+    
+    function payService(serviceId)
+    {
+        const contract = getContract()
+        await contract.payService(serviceId)
+    }
+    
     return(
         <>
             <div className="container bg-white mx-auto px-4 drop-shadow-md w-96 pt-4 pb-4 rounded-lg my-20">
