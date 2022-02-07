@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import mypic from '../public/close.jpg'
 
-export default function UserInfo({open, onClose, account, chainId, balance, disconnect})
+export default function UserInfo({open, onClose, account, chainId, disconnect})
 {
     if(!open) return null;
 

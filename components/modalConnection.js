@@ -48,7 +48,7 @@ export default function Modal({open, onClose, onConnect}) {
                     </div>
                 </div>
             </div>
-          <div className="animated fadeIn opacity-25 fixed inset-0 z-40 bg-black blur-lg"></div>   
+            <div className="animated fadeIn opacity-25 fixed inset-0 z-40 bg-black blur-lg"></div>   
         </>
     );
 }

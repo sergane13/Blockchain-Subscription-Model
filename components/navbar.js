@@ -5,7 +5,7 @@ export default function NavBar({children})
 {
     return(
         <>
-            <nav className="relative w-full flex flex-wrap items-center justify-between py-4 bg-gray-100 text-gray-500 focus:text-gray-700 shadow-lg">
+            <nav className="relative w-full flex flex-wrap items-center justify-between z-40 py-4 bg-gray-100 text-gray-500 focus:text-gray-700 shadow-lg">
                 <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                     <div className="container-fluid">
                         <Link href="/">

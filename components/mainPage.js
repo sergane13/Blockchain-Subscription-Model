@@ -1,7 +1,7 @@
-import AccessCard from "./accessType.js";
+import AccessCard from "./paymentCards.js";
 import Image from 'next/image';
 import access from '../public/access.jpg'
-import TiresDescription from "./tires.js";
+import TiresDescription from "./tiresCard.js";
 
 export default function MainPage()
 {
@@ -49,23 +49,23 @@ export default function MainPage()
                         "User has to simply send a transaction and pay the gas fees for it at the moment which are extremly low on polygon."
                      }
                      way={"/free"}
-                     access={true}
+                     id={0}
                     />
                     <TiresDescription
                      title={"Standard tire"}
                      description={
-                        "User has to pay by sending matic to contract address. Access status displayed with icon"
+                        "User has to pay by sending tokens to contract address. Access status displayed with icon. After user pays, he will get access to standard infographic"
                      }
                      way={"/standard"}
-                     access={true}
+                     id={1}
                     />
                     <TiresDescription
                      title={"Premium tire"}
                      description={
-                        "User has to pay by sending matic to contract address. Access status displayed with icon"
+                        "User has to pay by sending tokens to contract address. Access status displayed with icon. After user pays, he will get access to premium infographic"
                      }
                      way={"/premium"}
-                     access={false}
+                     id={2}
                     />
                     
                 </div>  
@@ -79,6 +79,8 @@ export default function MainPage()
                             free={true}
                             standard={false}
                             premium={false}
+                            id={0}
+                            price={0}
                         >
                             Get access to the free features of this application without paying.
                         </AccessCard>
@@ -88,6 +90,8 @@ export default function MainPage()
                             free={true}
                             standard={true}
                             premium={false}
+                            id={1}
+                            price={0.1}
                         >
                             Get access to the standard features of this application.
                         </AccessCard>
@@ -97,6 +101,8 @@ export default function MainPage()
                             free={true}
                             standard={true}
                             premium={true}
+                            id={2}
+                            price={0.2}
                         >
                             Get access to the premium features of this application.
                         </AccessCard>

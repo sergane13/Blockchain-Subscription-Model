@@ -4,7 +4,7 @@ import { injectedProvider} from "./connectors.js";
 import { useWeb3React } from "@web3-react/core";
 import Image from 'next/image';
 import user from '../public/user.png'
-import UserInfo from "./userInfo.js";
+import UserInfo from "./userDetails.js";
 
 export default function MetaMask() {
 
