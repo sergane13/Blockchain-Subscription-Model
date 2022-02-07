@@ -10,7 +10,9 @@ export default function MetaMask() {
 
     const [showModal, setShowModal] = useState(false);
     
-    const [walletConnected, setWalletConnected] = useState(false);
+    const [walletConnected, setWalletConnected] = useState(() => {
+        requestConnection()
+    });
 
     const {activate, active, account, chainId, deactivate, balance} = useWeb3React();
 

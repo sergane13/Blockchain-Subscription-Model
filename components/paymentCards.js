@@ -29,7 +29,7 @@ export default function AccessCard({type, free, standard, premium, id, price, ch
         }
     }, [userAccess, library, account])
 
-    // create services and set contracts
+    //create services and set contracts
     // async function createServices(){
     //     const [contract1, signer1] = getContract(accessContractAddress, accessAbi, library.provider)
 
@@ -84,10 +84,7 @@ export default function AccessCard({type, free, standard, premium, id, price, ch
         const userExp = await contract.callStatic.getExpirationDate(serviceId, addressSigner)
 
         const temp = parseInt(userExp, 10)
-        console.log(temp)
-
         const time = new Date(temp * 1000).toLocaleDateString("en-US")
-        console.log(time)
 
         setUserExpiration(time)
     }
@@ -104,7 +101,9 @@ export default function AccessCard({type, free, standard, premium, id, price, ch
     return(
         <>
             <div className="container bg-white mx-auto px-4 drop-shadow-md w-96 pt-4 pb-4 rounded-lg my-20">
-                <h1 className="text-gray-800 text-3xl font-semibold"> {type} </h1>
+                <h1 className="text-gray-800 text-3xl font-semibold"> {type} 
+                    <div className="inline pl-16 font-medium text-xl"> {price} ETH</div>
+                </h1>
                 <div>
                     <p className="mt-2 text-gray-600 my-4">
                         {children}
