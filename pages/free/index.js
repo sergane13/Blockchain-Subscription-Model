@@ -15,13 +15,12 @@ import { ethers } from "ethers"
 
 export default function FreeTier()
 {
-    const {library, account} = useWeb3React();
-    const [userAccess, setUserAccess] = useState(() => {
-        localStorage.setItem(0, false)
+    const {library, account, active} = useWeb3React();
+    const [userAccess, setUserAccess] = useState(() => {  
         if (typeof window !== 'undefined') {
             const temp = localStorage.getItem(0);
             const isTrueSet = (temp === 'true');
-            return isTrueSet;
+            return isTrueSet && active;
         } else {
             return false;
         }
