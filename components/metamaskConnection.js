@@ -56,6 +56,9 @@ export default function MetaMask() {
             deactivate() // deactivate 
             localStorage.setItem("isWalletConnected", false)
             setWalletConnected(false)
+            localStorage.setItem(0, false)
+            localStorage.setItem(1, false)
+            localStorage.setItem(2, false)
         } catch(e) {
             console.log(e)
         }   
