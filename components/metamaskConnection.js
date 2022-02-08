@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Modal from "./modalConnection.js";
 import { injectedProvider} from "./connectors.js";
 import { useWeb3React } from "@web3-react/core";
-import Image from 'next/image';
-import user from '../public/user.png'
+import Image from "next/image";
+import user from "../public/user.png";
 import UserInfo from "./userDetails.js";
 
 export default function MetaMask() {
@@ -28,7 +28,7 @@ export default function MetaMask() {
     {
         injectedProvider.isAuthorized()
         .then((isAuth) => {
-            let temp = (localStorage.getItem('isWalletConnected') === 'true');
+            let temp = (localStorage.getItem("isWalletConnected") === "true");
             setWalletConnected(temp)
 
             if(isAuth && temp){
@@ -42,7 +42,7 @@ export default function MetaMask() {
     {
         try{
             await activate(injectedProvider)
-            localStorage.setItem('isWalletConnected', true)
+            localStorage.setItem("isWalletConnected", true)
             setWalletConnected(true)
         } catch(e) {
             console.log(e)
@@ -54,7 +54,7 @@ export default function MetaMask() {
     {
         try{
             deactivate() // deactivate 
-            localStorage.setItem('isWalletConnected', false)
+            localStorage.setItem("isWalletConnected", false)
             setWalletConnected(false)
         } catch(e) {
             console.log(e)
@@ -89,7 +89,7 @@ export default function MetaMask() {
                         src={user}
                         alt="Picture of the author"
                         width="30px"
-                        loading='eager'
+                        loading="eager"
                         height="30px"
                         className="rounded-full"
                     /> 

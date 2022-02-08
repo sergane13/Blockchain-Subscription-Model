@@ -1,6 +1,6 @@
 import AccessCard from "./paymentCards.js";
-import Image from 'next/image';
-import access from '../public/access.jpg'
+import Image from "next/image";
+import access from "../public/access.jpg";
 import TiresDescription from "./tiresCard.js";
 
 export default function MainPage()
@@ -21,7 +21,7 @@ export default function MainPage()
                                 <p className="font-sans text-xl pt-12 text-slate-400">
                                     This interface has the sole purpose to show 
                                     an implementation example of our solution for a 
-                                    simple SaaS that manages users' access to different 
+                                    simple SaaS that manages users access to different 
                                     services that he offers.
                                 </p>
                             </div>
@@ -32,7 +32,7 @@ export default function MainPage()
                                 src={access}
                                 alt="Picture of the author"
                                 width="1760px"
-                                loading='eager'
+                                loading="eager"
                                 height="1100px"
                             />        
                         </div> 

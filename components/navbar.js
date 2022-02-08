@@ -9,7 +9,7 @@ export default function NavBar({children})
                 <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                     <div className="container-fluid">
                         <Link href="/">
-                            <a className="text-xl text-black font-semibold" href="/">Runus</a>
+                            <a className="text-xl text-black font-semibold">Runus</a>
                         </Link>
                         <div className="absolute inset-y-0 right-0">
                             {children}

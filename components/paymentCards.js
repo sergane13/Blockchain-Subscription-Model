@@ -11,9 +11,9 @@ export default function AccessCard({type, free, standard, premium, id, price, ch
     const {library, account} = useWeb3React();
 
     const [userAccess, setUserAccess] = useState(() => {
-        if (typeof window !== 'undefined') {
+        if (typeof window !== "undefined") {
             const temp = localStorage.getItem(id);
-            const isTrueSet = (temp === 'true');
+            const isTrueSet = (temp === "true");
             return isTrueSet;
         } else {
             return false;
