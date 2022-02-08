@@ -17,6 +17,7 @@ export default function FreeTier()
 {
     const {library, account} = useWeb3React();
     const [userAccess, setUserAccess] = useState(() => {
+        localStorage.setItem(0, false)
         if (typeof window !== 'undefined') {
             const temp = localStorage.getItem(0);
             const isTrueSet = (temp === 'true');

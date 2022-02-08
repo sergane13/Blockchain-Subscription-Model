@@ -17,6 +17,7 @@ export default function PremiumTier()
 {
     const {library, account} = useWeb3React();
     const [userAccess, setUserAccess] = useState(() => {
+        localStorage.setItem(1, false)
         if (typeof window !== 'undefined') {
             const temp = localStorage.getItem(1);
             const isTrueSet = (temp === 'true');
