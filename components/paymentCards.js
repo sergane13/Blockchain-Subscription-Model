@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers"
 import { utils } from "ethers";
 
-export default function AccessCard({type, free, standard, premium, id, price, children}){
+export default function AccessCard({type, free, standard, premium, id, price, centerCard, children}){
     
     const {library, account} = useWeb3React();
 
@@ -99,77 +99,78 @@ export default function AccessCard({type, free, standard, premium, id, price, ch
     }
 
     return(
-        <>
-            <div className="container bg-white mx-auto px-4 drop-shadow-md w-96 pt-4 pb-4 rounded-lg my-20">
-                <h1 className="text-gray-800 text-3xl font-semibold"> {type} 
-                    <div className="inline pl-16 font-medium text-xl"> {price} ETH</div>
-                </h1>
-                <div>
-                    <p className="mt-2 text-gray-600 my-4">
-                        {children}
-                    </p>
-                    <ul className="list-disc mx-4"> 
-                    <li> 
-                        {
-                            free ? 
-                            <div>
-                                Free tier exemple
-                            </div> 
-                            : 
-                            <div className="text-slate-300">
-                                Free tier exemple
-                            </div> 
-                        }
-                        
-                    </li>
-                    <li> 
-                        {
-                            standard ? 
-                            <div>
-                                Standard tier exemple
-                            </div> 
-                            : 
-                            <div className="text-slate-300">
-                                Standard tier exemple
-                            </div> 
-                        } 
-                    </li>
-                    <li>
-                        {
-                            premium ? 
-                            <div>
-                                Premium tier exemple
-                            </div> 
-                            : 
-                            <div className="text-slate-300">
-                                Premium tier exemple
-                            </div> 
-                        } 
-                    </li>
-                </ul>
-                </div>
-                <div>
-                    { userAccess ? 
-                        <>
-                            <button 
-                            className="bg-blue-200 rounded-lg font-bold text-white text-center px-3 py-2 my-4"> 
-                                Payed
-                            </button>
-                            <div>
-                                Expiration date: {userExpiration}
-                            </div> 
-                        </>
-                        
-                        :
-                        <button onClick={ () => {
-                            makePayment(id)
-                            //createServices()
-                        } } className="bg-blue-500 rounded-lg font-bold text-white text-center px-3 py-2 my-4 transition duration-100 ease-in-out hover:bg-blue-600 mr-6"> 
-                            Pay now 
-                        </button>      
+        <div className={centerCard ? "flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10" : "flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"}>
+            <div className={centerCard ? "flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow" : "flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"}>
+              <div className={centerCard ? "w-full p-8 text-3xl font-bold text-center" : "p-8 text-3xl font-bold text-center border-b-4"}>
+                {type}
+              </div>
+              {centerCard ? <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div> : ''}
+              <ul className={centerCard ? "w-full text-center text-base font-bold" : "w-full text-center text-sm"}>
+                <li className="border-b py-4"> 
+                    {
+                        free ? 
+                        <div>
+                            Free tier exemple
+                        </div> 
+                        : 
+                        <div className="text-slate-300">
+                            Free tier exemple
+                        </div> 
                     }
-                </div>
+                    
+                </li>
+                <li className="border-b py-4"> 
+                    {
+                        standard ? 
+                        <div>
+                            Standard tier exemple
+                        </div> 
+                        : 
+                        <div className="text-slate-300">
+                            Standard tier exemple
+                        </div> 
+                    } 
+                </li>
+                <li className="border-b py-4">
+                    {
+                        premium ? 
+                        <div>
+                            Premium tier exemple
+                        </div> 
+                        : 
+                        <div className="text-slate-300">
+                            Premium tier exemple
+                        </div> 
+                    } 
+                </li>
+              </ul>
             </div>
-        </>
+            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+              <div className={centerCard ? "w-full pt-6 text-4xl font-bold text-center": "w-full pt-6 text-3xl text-gray-600 font-bold text-center"}>
+                {price}
+                <span className="text-base"> ETH</span>
+              </div>
+              <div className="flex items-center justify-center">             
+                { userAccess ? 
+                    <>
+                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            Payed
+                        </button>
+                        <div>
+                            Expiration date: {userExpiration}
+                        </div> 
+                    </>
+                    
+                    :
+                    <button onClick={ () => {
+                        makePayment(id)
+                        //createServices()
+                    } } className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"> 
+                        Pay now 
+                    </button>      
+                }
+              </div>
+            </div>
+        </div>
     );
 }

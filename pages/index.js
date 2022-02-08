@@ -9,12 +9,12 @@ import Footer from "../components/footer.js";
 export default function Home() {
 
     return(
-        <>
+        <body className="leading-normal tracking-normal text-white gradient">
             <NavBar>
                 <MetaMask></MetaMask>
             </NavBar>
             <MainPage/>
             <Footer/>
-        </>
+        </body>
     );
 }
