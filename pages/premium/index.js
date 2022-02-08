@@ -15,7 +15,7 @@ import { ethers } from "ethers"
 
 export default function StandardTier()
 {   
-    const {library, account} = useWeb3React();
+    const {library, account, active} = useWeb3React();
     const [userAccess, setUserAccess] = useState(() => {
         if (typeof window !== 'undefined') {
             const temp = localStorage.getItem(2);
