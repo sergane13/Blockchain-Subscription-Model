@@ -104,7 +104,7 @@ export default function AccessCard({type, free, standard, premium, id, price, ce
               <div className={centerCard ? "w-full p-8 text-3xl font-bold text-center" : "p-8 text-3xl font-bold text-center border-b-4"}>
                 {type}
               </div>
-              {centerCard ? <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div> : ''}
+              {centerCard ? <div className="h-1 w-full gradient my-0 py-0 rounded-t"></div> : ''}
               <ul className={centerCard ? "w-full text-center text-base font-bold" : "w-full text-center text-sm"}>
                 <li className="border-b py-4"> 
                     {
