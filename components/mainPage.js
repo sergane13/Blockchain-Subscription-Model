@@ -1,6 +1,7 @@
 import AccessCard from "./paymentCards.js";
 import Image from "next/image";
 import saas_access from "../public/saas_access.png";
+import game_access from "../public/game_access.png";
 import community_access from "../public/community_access.png";
 import newsletter_access from "../public/newsletter_access.png";
 import TiresDescription from "./tiresCard.js";
