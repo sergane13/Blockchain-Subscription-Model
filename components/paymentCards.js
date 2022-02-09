@@ -11,12 +11,14 @@ export default function AccessCard({type, free, standard, premium, id, price, ce
     const {library, account} = useWeb3React();
 
     const [userAccess, setUserAccess] = useState(() => {
-        useEffect(() => {
+        if (typeof window !== "undefined") {
             const temp = localStorage.getItem(id);
             const isTrueSet = (temp === "true");
             return isTrueSet;
-        });
-        return false;
+        }
+        else {
+            return false;
+        }
     });
     const [userExpiration, setUserExpiration] = useState("");
 
