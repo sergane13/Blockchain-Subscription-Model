@@ -1,6 +1,8 @@
 import AccessCard from "./paymentCards.js";
 import Image from "next/image";
-import access from "../public/access.jpg";
+import saas_access from "../public/saas_access.png";
+import community_access from "../public/community_access.png";
+import newsletter_access from "../public/newsletter_access.png";
 import TiresDescription from "./tiresCard.js";
 
 
@@ -22,7 +24,7 @@ export default function MainPage()
                     </button>
                     </div>
                     <div className="w-full md:w-3/5 py-6 text-center">
-                    <img className="w-full md:w-4/5 z-50" src="blockchain.png" />
+                    <img className="w-full md:w-4/5 z-50" src="blockchain.svg" />
                     </div>
                 </div>
             </div>
@@ -39,73 +41,67 @@ export default function MainPage()
                     <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
                     <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                        <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                            <br/>
-                            AUTOMATIC
-                        </p>
-                        <div className="w-full font-bold text-xl text-gray-800 px-6">
-                            PAYMENT AND ACCESS MANAGEMENT
+                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
+                            <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+                                <br/>
+                                Automatic
+                            </p>
+                            <div className="w-full font-bold text-xl text-gray-800 px-6">
+                                Payment and access
+                            </div>
+                            <p className="text-gray-800 text-base px-6 mb-5">
+                                The payment and access contract works together for a fluent and fast workflow that can be implemented in minutes by any business.
+                            </p>
+                            </a>
                         </div>
-                        <p className="text-gray-800 text-base px-6 mb-5">
-                            The payment and access contract works together for a fluent and fast workflow that can be implemented in minutes by any business.
-                        </p>
-                        </a>
-                    </div>
-                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div className="flex items-center justify-start">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                            <div className="flex items-center justify-center">
+                                <img className="w-full md:w-3/5 z-30" src="automatic.svg" />
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                        <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                            <br/>
-                            SAFE
-                        </p>
-                        <div className="w-full font-bold text-xl text-gray-800 px-6">
-                            KEEPING USERS PERSONAL DATA
+                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
+                            <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+                                <br/>
+                                Easy
+                            </p>
+                            <div className="w-full font-bold text-xl text-gray-800 px-6">
+                                To use
+                            </div>
+                            <p className="text-gray-800 text-base px-6 mb-5">
+                                Access is given based on users addresses, the only information we need to manage permissions on different applications.
+                            </p>
+                            </a>
                         </div>
-                        <p className="text-gray-800 text-base px-6 mb-5">
-                            Access is given based on users addresses, the only information we need to manage permissions on different applications.
-                        </p>
-                        </a>
-                    </div>
-                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div className="flex items-center justify-center">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                            <div className="flex items-center justify-center">
+                                <img className="w-full md:w-3/5 z-30" src="easy_to_use.svg" />
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                    <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                        <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                        <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                            <br/>
-                            SECURE
-                        </p>
-                        <div className="w-full font-bold text-xl text-gray-800 px-6">
-                            ECOSYSTEM
+                        <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
+                            <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+                                <br/>
+                                Secure
+                            </p>
+                            <div className="w-full font-bold text-xl text-gray-800 px-6">
+                                Ecosystem
+                            </div>
+                            <p className="text-gray-800 text-base px-6 mb-5">
+                                Using the power of blockchain to maintain the manipulation of contracts in hands of the businesses.
+                            </p>
+                            </a>
                         </div>
-                        <p className="text-gray-800 text-base px-6 mb-5">
-                            Using the power of blockchain to maintain the manipulation of contracts in hands of the businesses.
-                        </p>
-                        </a>
-                    </div>
-                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div className="flex items-center justify-end">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+                        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+                            <div className="flex items-center justify-center">
+                                <img className="w-full md:w-3/5 z-30" src="secure.svg" />
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </section>
@@ -129,18 +125,18 @@ export default function MainPage()
                     </div>
                     <div className="w-full sm:w-1/2 p-6">
                         <Image
-                            src={access}
+                            src={saas_access}
                             alt="Picture of the author"
                             width="1760px"
                             loading="eager"
                             height="1100px"
-                        />       
+                        />     
                     </div>
                     </div>
                     <div className="flex flex-wrap flex-col-reverse sm:flex-row">
                     <div className="w-full sm:w-1/2 p-6 mt-6">
                         <Image
-                            src={access}
+                            src={community_access}
                             alt="Picture of the author"
                             width="1760px"
                             loading="eager"
@@ -169,7 +165,7 @@ export default function MainPage()
                     </div>
                     <div className="w-full sm:w-1/2 p-6">
                         <Image
-                            src={access}
+                            src={newsletter_access}
                             alt="Picture of the author"
                             width="1760px"
                             loading="eager"
@@ -180,7 +176,7 @@ export default function MainPage()
                     <div className="flex flex-wrap flex-col-reverse sm:flex-row">
                     <div className="w-full sm:w-1/2 p-6 mt-6">
                         <Image
-                            src={access}
+                            src={game_access}
                             alt="Picture of the author"
                             width="1760px"
                             loading="eager"
@@ -209,50 +205,97 @@ export default function MainPage()
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
+                    <h1 className="text-4xl text-center font-semibold mb-6">Package status</h1>
+                    <div className="container">
+                    <div className="flex flex-col md:grid grid-cols-12 text-gray-50">
 
-                    <ol className="relative border-l border-gray-200 dark:border-gray-700">
-                        <li className="mb-10 ml-6">            
-                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                                <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                            </span>
-                            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark">CONNECT</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">First step</time>
-                            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">User connects his/her wallet to the application so you can retrieve his/her data such as an address, balance, chainld,</p>
-                            <a href="#" className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg className="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd"></path></svg> Connect</a>
-                        </li>
-                        <li className="mb-10 ml-6">
-                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                                <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                            </span>
-                            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text">CHOOSE TIER</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Second step</time>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">User decides which tier to choose and press the pay button</p>
-                        </li>
-                        <li className="mb-10 ml-6">
-                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                                <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                            </span>
-                            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text">CONFIRM TRANSACTION</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Third step</time>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">User confirms the transaction with the required value and also pays the gas fees.</p>
-                        </li>
-                        <li className="mb-10 ml-6">
-                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                                <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                            </span>
-                            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text">PAYMENT IS MADE</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Fourth step</time>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">The tokens are sent to the payment contract and stored there until you decide to withdraw them</p>
-                        </li>
-                        <li className="mb-10 ml-6">
-                            <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                                <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
-                            </span>
-                            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text">ACCESS GRANTED</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Fifth step</time>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Access is given for the address that initiated the payment until a specified date</p>
-                        </li>
-                    </ol>
+                        <div className="flex md:contents">
+                        <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div className="h-full w-6 flex items-center justify-center">
+                            <div className="h-full w-1 bg-indigo-500/75 pointer-events-none"></div>
+                            </div>
+                            <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-500 shadow text-center">
+                            <i className="fas fa-check-circle text-white"></i>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-500/75 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                            <h3 className="font-semibold text-lg mb-1">Connect to Metamask</h3>
+                            <p className="leading-tight text-justify w-full">
+                            User connects his/her wallet to the application so you can retrieve his/her data such as an address, balance, chainld, ...
+                            </p>
+                        </div>
+                        </div>
+
+                        <div className="flex md:contents">
+                        <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div className="h-full w-6 flex items-center justify-center">
+                            <div className="h-full w-1 bg-indigo-500/75 pointer-events-none"></div>
+                            </div>
+                            <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-500 shadow text-center">
+                            <i className="fas fa-check-circle text-white"></i>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-500/75 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                            <h3 className="font-semibold text-lg mb-1">Choose tier</h3>
+                            <p className="leading-tight text-justify w-full">
+                            User decides which tier to choose and press the pay button.
+                            </p>
+                        </div>
+                        </div>
+
+                        <div className="flex md:contents">
+                        <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div className="h-full w-6 flex items-center justify-center">
+                            <div className="h-full w-1 bg-indigo-500/75 pointer-events-none"></div>
+                            </div>
+                            <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-500 shadow text-center">
+                            <i className="fas fa-check-circle text-white"></i>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-500/75 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                            <h3 className="font-semibold text-lg mb-1">Confirm transaction</h3>
+                            <p className="leading-tight text-justify w-full">
+                            User confirms the transaction with the required value and also pays the gas fees.
+                            </p>
+                        </div>
+                        </div>
+
+                        <div className="flex md:contents">
+                        <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div className="h-full w-6 flex items-center justify-center">
+                            <div className="h-full w-1 bg-indigo-500/75 pointer-events-none"></div>
+                            </div>
+                            <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-500 shadow text-center">
+                            <i className="fas fa-check-circle text-white"></i>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-500/75 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                            <h3 className="font-semibold text-lg mb-1">Payment transaction</h3>
+                            <p className="leading-tight text-justify w-full">
+                            The tokens are sent to the payment contract and stored there until you decide to withdraw them.
+                            </p>
+                        </div>
+                        </div>
+
+                        <div className="flex md:contents">
+                        <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                            <div className="h-full w-6 flex items-center justify-center">
+                            <div className="h-full w-1 bg-indigo-500/75 pointer-events-none"></div>
+                            </div>
+                            <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-indigo-500 shadow text-center">
+                            <i className="fas fa-check-circle text-white"></i>
+                            </div>
+                        </div>
+                        <div className="bg-indigo-500/75 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                            <h3 className="font-semibold text-lg mb-1">Access granted</h3>
+                            <p className="leading-tight text-justify w-full">
+                            Access is given for the address that initiated the payment until a specified date.
+                            </p>
+                        </div>
+                        </div>
+
+                    </div>
+                    </div>
                 </div>
             </section>
 

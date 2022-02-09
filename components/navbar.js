@@ -8,11 +8,10 @@ export default function NavBar({children})
             <nav className="relative w-full flex flex-wrap items-center justify-between z-40 py-4 bg-gray-100 text-gray-500 focus:text-gray-700 shadow-lg">
                 <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
                     <div className="container-fluid">
-                        <Link href="/">
-                            <a className="text-xl text-black font-semibold">Runus</a>
-                        </Link>
-                        <div className="absolute inset-y-0 right-0">
-                            {children}
+                        <div className="inline-flex ml-4">
+                            <Link href="#">
+                                <img src="logo.png" width="100px" />
+                            </Link>
                         </div>
                         <div className="inline ml-20 hover:text-blue-600">
                             <Link href="/free">
@@ -28,6 +27,10 @@ export default function NavBar({children})
                             <Link href="/premium">
                                 <a>Premium</a>
                             </Link>
+                        </div>
+                           
+                        <div className="absolute inset-y-0 right-0">
+                            {children}
                         </div>
                     </div>
                 </div>
